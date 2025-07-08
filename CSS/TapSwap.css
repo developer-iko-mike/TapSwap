@@ -1,0 +1,121 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ color: #fff;
+}
+
+body{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(114deg, #be9247 21%, #241f33 50%);
+}
+.container{
+height: 100%;
+position: relative;
+}
+.mainTS{
+ height: 99.5vh;
+}
+.TS,#coin,#charge,.charset,.coinplus{
+ position: absolute;
+}
+.TS{
+ top: 28vh;
+ right: 10%;
+ left: 10.5%;
+ bottom: 28vh;
+ width: 75%;
+ height: 34%;
+ cursor: pointer;
+}
+#coin{
+ font-size: 3.5rem;
+ top: 14.5vh;
+ right: 37%;
+ left: 37%;
+ font-weight: 700;
+ font-family: sans-serif;
+}
+#charge{
+ bottom: 16.7vh;
+ right: 47%;
+ left: 47%;
+ font-size: 2rem;
+ font-family: monospace;
+}
+.charset{
+ width: 88%;
+ height: 1.8rem;
+ bottom: 13.5%;
+ border: 1px solid #001155;
+ border-radius: 50rem;
+ left: 1.8rem;
+ right: 2rem;
+ overflow: hidden;
+ padding: 1px 0;
+}
+.chargeTime{
+ height: 100%;
+ background-color: #e49926;
+ width: 100%;
+}
+.coinplus{
+ display: none;
+ font-family: fantasy;
+ font-size: 4rem;
+ top: 15rem;
+ opacity: 0;
+ animation: none;
+}
+@keyframes coinplusHidden{
+ 0%{
+  margin-top: 0rem;
+  opacity: 1;
+ }
+ 50%{
+  margin-top: -2rem;
+  opacity: 0.5;
+ }
+ 100%{
+  margin-top: -4rem;
+  opacity: 0;
+ }
+}
+.coinplus::after{
+ content: "";
+font-size: 3rem;
+font-weight: 900;
+}
+
+@media only screen and (max-width: 485px){
+ .container {
+  height: 100vh;
+  width: 100vw;
+}
+.mainTS {
+ height: 99.5vh;
+ width: 100%;
+}
+.charset {
+ bottom: 13.3%;
+ left: 1.3rem;
+ right: 1.3rem;
+}
+#charge{
+ bottom: 16.5vh;
+}
+#coin {
+ top: 14.2vh;
+}
+}
+@media only screen and (max-width: 380px){
+ .TS {
+  top: 29vh;
+  right: 7.5%;
+  left: 7.5%;
+  width: 85%;
+}
+}
