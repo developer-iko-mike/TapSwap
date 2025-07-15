@@ -1,6 +1,6 @@
 # 📱 TapSwap - پروژه‌ای که پول نمی‌ده اما کلی حال می‌ده! 💰
 
-![TapSwap Logo](./image/preview.gif)
+<img src="./image/preview.gif" alt="Tap Swap" title="Tap Swap" align="center">
 
 ## 🤔 این پروژه چیه؟
 یه بازی اعتیادآور که:
