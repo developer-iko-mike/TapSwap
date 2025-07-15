@@ -15,6 +15,7 @@ background: linear-gradient(114deg, #be9247 21%, #241f33 50%);
 .container{
 height: 100%;
 position: relative;
+overflow: hidden;
 }
 .mainTS{
  height: 99.5vh;
